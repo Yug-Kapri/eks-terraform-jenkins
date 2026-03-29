@@ -1,0 +1,18 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform variables (sensitive)
+# *.tfvars
+# *.tfvars.json
+
+# Environment variables
+.env
+
+# OS / misc
+*.log
+*.tmp
+.DS_Store
