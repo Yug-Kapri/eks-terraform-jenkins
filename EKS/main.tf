@@ -30,10 +30,10 @@ module "vpc" {
 
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
-  version = "~> 21.0"
+  version = "~>21.0"
 
   name    = "my-eks-cluster"
-  kubernetes_version = "1.30"
+  kubernetes_version = "1.33"
 
   endpoint_public_access = true
 
