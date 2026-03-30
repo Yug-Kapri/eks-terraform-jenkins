@@ -41,19 +41,10 @@ module "eks" {
     enabled    = true
     node_pools = ["general-purpose"]
   }
-  
+
   vpc_id     = module.vpc.vpc_id
   subnet_ids = module.vpc.private_subnets
 
-  eks_managed_node_groups = {
-    nodes = {
-      min_size     = 1
-      max_size     = 3
-      desired_size = 2
-
-      instance_types = ["c7i-flex.large"]
-    }
-  }
 
   tags = {
     Environment = "dev"
